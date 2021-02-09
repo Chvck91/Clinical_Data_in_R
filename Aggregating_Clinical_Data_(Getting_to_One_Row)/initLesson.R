@@ -17,7 +17,7 @@ wide_sample <- read.csv(file.path(.get_course_path(), "Clinical_Data_in_R", "Agg
                         na.strings = c(""),
                         stringsAsFactors = FALSE)
 
-long_sample <- tidyr::gather(wide_sample, key = "Phone Type", value = "Number", -Name, na.rm = TRUE)
+long_sample <- tidyr::gather(wide_sample, key = "Phone Type", value = "Number", na.rm = TRUE)
                            
 
 
